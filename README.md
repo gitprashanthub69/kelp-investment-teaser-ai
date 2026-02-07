@@ -180,9 +180,6 @@ Located in `backend/.env`:
 
 ---
 
-## 📞 Support
-
-For technical issues or feature requests, contact the development team.
 
 ---
 
