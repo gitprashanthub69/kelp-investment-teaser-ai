@@ -1,0 +1,151 @@
+{
+  "kalyani_forge": {
+    "text_length": 41882,
+    "extracted": {
+      "slide_1": {
+        "biz_desc": "Kalyani Forge Ltd. is a leading Indian engineering company specializing in high-quality forged, machined, and\nassembled products for various industries, including automotive, construction, and power generation. Their\nbusiness model focuses on hot, warm, and cold forging, alongside precision machining and heat treatment services,\ncatering to complex customer requirements.",
+        "product_portfolio": [
+          {
+            "category": "**Engine** (Turbocharger parts, Engine components)",
+            "details": ""
+          },
+          {
+            "category": "**Driveline** (Transmission parts, Axle parts)",
+            "details": ""
+          },
+          {
+            "category": "Design, Prototyping, Value engineering, Logistics)",
+            "details": ""
+          }
+        ],
+        "applications": [
+          {
+            "industry": "Automotive",
+            "share": "60%"
+          },
+          {
+            "industry": "Construction",
+            "share": "50%"
+          },
+          {
+            "industry": "Mining",
+            "share": "40%"
+          },
+          {
+            "industry": "Infrastructure",
+            "share": "30%"
+          },
+          {
+            "industry": "Power",
+            "share": "20%"
+          },
+          {
+            "industry": "Marine",
+            "share": "10%"
+          }
+        ],
+        "certifications": [
+          "ISO TS 16949",
+          "ISO 9001",
+          "ISO 14001",
+          "ISO 45001",
+          "IATF 16949"
+        ],
+        "assets": [
+          {
+            "label": "Manufacturing\nUnits",
+            "value": "5"
+          },
+          {
+            "label": "Years in\nBusiness",
+            "value": "10+"
+          }
+        ],
+        "customers": [
+          "Major MNC Customer"
+        ]
+      },
+      "slide_3": {
+        "upcoming_facilities": [
+          "New Business Development",
+          "Capex Program"
+        ],
+        "export_markets": [
+          "USA",
+          "Europe",
+          "Germany",
+          "UK",
+          "India"
+        ]
+      },
+      "_extracted_fields": [
+        "biz_desc",
+        "website",
+        "product_portfolio",
+        "applications",
+        "certifications",
+        "assets",
+        "upcoming_facilities",
+        "export_markets",
+        "customers"
+      ],
+      "website": "https://kalyaniforge.com/"
+    }
+  },
+  "indswift": {
+    "text_length": 103821,
+    "extracted": {
+      "slide_1": {
+        "biz_desc": "IndSwift Ltd is a leading Indian pharmaceutical company specializing in the development, \nmanufacturing, and marketing of a wide range of pharmaceutical products, including Active \nPharmaceutical Ingredients (APIs) and herbal products. The company operates multiple \ndivisions, such as Noble, Nova, Ethical, and Generic, and has established a strong presence in \nboth domestic and international marke",
+        "product_portfolio": [
+          {
+            "category": "Noble Division",
+            "details": ""
+          },
+          {
+            "category": "Nova Division",
+            "details": ""
+          },
+          {
+            "category": "Ethical Division",
+            "details": ""
+          }
+        ],
+        "certifications": [
+          "ISO 9001:2008",
+          "ISO 9001",
+          "WHO GMP",
+          "WHO-GMP"
+        ],
+        "assets": [
+          {
+            "label": "Years in\nBusiness",
+            "value": "25+"
+          },
+          {
+            "label": "Countries\nPresence",
+            "value": "45+"
+          }
+        ]
+      },
+      "slide_3": {
+        "export_markets": [
+          "USA",
+          "Middle East",
+          "UK",
+          "France",
+          "Japan"
+        ]
+      },
+      "_extracted_fields": [
+        "biz_desc",
+        "website",
+        "product_portfolio",
+        "certifications",
+        "assets",
+        "export_markets"
+      ],
+      "website": "https://www.indswiftlabs.com/"
+    }
+  }
+}

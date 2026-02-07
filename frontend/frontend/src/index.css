@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+:root {
+  /* Default: Kelp Dark */
+  --color-brand-dark: #0B1120;
+  --color-brand-primary: #0EA5E9;
+  --color-brand-accent: #14B8A6;
+  --color-brand-light: #F8FAFC;
+  --color-brand-glass: rgba(15, 23, 42, 0.7);
+  --color-brand-shadow: rgba(14, 165, 233, 0.2);
+  --brand-gradient: linear-gradient(135deg, #0EA5E9, #14B8A6);
+}
+
+[data-theme='midnight'] {
+  --color-brand-dark: #020617;
+  --color-brand-primary: #6366F1;
+  --color-brand-accent: #8B5CF6;
+  --color-brand-shadow: rgba(99, 102, 241, 0.2);
+  --brand-gradient: linear-gradient(135deg, #6366F1, #020617);
+}
+
+[data-theme='emerald'] {
+  --color-brand-dark: #064E3B;
+  --color-brand-primary: #10B981;
+  --color-brand-accent: #34D399;
+  --color-brand-shadow: rgba(16, 185, 129, 0.2);
+  --brand-gradient: linear-gradient(135deg, #10B981, #064E3B);
+}
+
+[data-theme='sunset'] {
+  --color-brand-dark: #2D0F02;
+  --color-brand-primary: #F97316;
+  --color-brand-accent: #FB923C;
+  --color-brand-shadow: rgba(249, 115, 22, 0.2);
+  --brand-gradient: linear-gradient(135deg, #F97316, #2D0F02);
+}
+
+[data-theme='cyberpunk'] {
+  --color-brand-dark: #1A0033;
+  --color-brand-primary: #FF00FF;
+  --color-brand-accent: #00FFFF;
+  --color-brand-shadow: rgba(255, 0, 255, 0.2);
+  --brand-gradient: linear-gradient(135deg, #FF00FF, #1A0033);
+}
+
+[data-theme='slate'] {
+  --color-brand-dark: #0F172A;
+  --color-brand-primary: #64748B;
+  --color-brand-accent: #94A3B8;
+  --color-brand-shadow: rgba(100, 116, 139, 0.2);
+  --brand-gradient: linear-gradient(135deg, #64748B, #0F172A);
+}
+
+[data-theme='amethyst'] {
+  --color-brand-dark: #1E1B4B;
+  --color-brand-primary: #8B5CF6;
+  --color-brand-accent: #A78BFA;
+  --color-brand-shadow: rgba(139, 92, 246, 0.2);
+  --brand-gradient: linear-gradient(135deg, #8B5CF6, #1E1B4B);
+}
+
+[data-theme='gold'] {
+  --color-brand-dark: #1C1917;
+  --color-brand-primary: #EAB308;
+  --color-brand-accent: #FACC15;
+  --color-brand-shadow: rgba(234, 179, 8, 0.2);
+  --brand-gradient: linear-gradient(135deg, #EAB308, #1C1917);
+}
+
+[data-theme='crimson'] {
+  --color-brand-dark: #450A0A;
+  --color-brand-primary: #EF4444;
+  --color-brand-accent: #F87171;
+  --color-brand-shadow: rgba(239, 68, 68, 0.2);
+  --brand-gradient: linear-gradient(135deg, #EF4444, #450A0A);
+}
+
+[data-theme='mint'] {
+  --color-brand-dark: #0D2D2D;
+  --color-brand-primary: #2DD4BF;
+  --color-brand-accent: #5EEAD4;
+  --color-brand-shadow: rgba(45, 212, 191, 0.2);
+  --brand-gradient: linear-gradient(135deg, #2DD4BF, #0D2D2D);
+}
+
+@theme {
+  --color-brand-dark: var(--color-brand-dark);
+  --color-brand-primary: var(--color-brand-primary);
+  --color-brand-accent: var(--color-brand-accent);
+  --color-brand-light: var(--color-brand-light);
+  --color-brand-glass: var(--color-brand-glass);
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Outfit', system-ui, sans-serif;
+
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+@layer base {
+  body {
+    @apply text-slate-100 font-sans antialiased overflow-x-hidden transition-colors duration-500 min-h-screen relative;
+    background-color: var(--color-brand-dark);
+    background-image:
+      radial-gradient(circle at top right, var(--color-brand-primary), transparent 45%),
+      radial-gradient(circle at bottom left, var(--color-brand-accent), transparent 45%);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display tracking-tight text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-brand-primary to-brand-accent hover:opacity-90 text-white rounded-full transition-all duration-300 font-medium tracking-wide flex items-center justify-center gap-2;
+    box-shadow: 0 10px 15px -3px var(--color-brand-shadow);
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-white/5 border border-white/10 hover:bg-white/10 text-white rounded-full transition-all duration-300 backdrop-blur-sm font-medium tracking-wide;
+  }
+
+  .glass-card {
+    @apply bg-slate-800/40 backdrop-blur-md border border-white/5 rounded-2xl shadow-xl transition-all duration-300;
+  }
+
+  .section-padding {
+    @apply py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto;
+  }
+
+  .text-gradient {
+    background: var(--brand-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
